@@ -1,0 +1,3 @@
+[submodule "projects/scroll-here"]
+	path = projects/scroll-here
+	url = git@github.com:arman-madi/angular-scroll-here.git
