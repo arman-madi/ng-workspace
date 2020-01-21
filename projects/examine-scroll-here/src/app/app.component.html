@@ -1,0 +1,112 @@
+
+<p>Scroll the given scrollable parent with added offset</p>
+<div #scrollableParent [ngStyle]="{'height': '200px', 'overflow': 'auto'}">
+<div>
+<div style=" padding: 400px; border: 1px solid;">
+  <ar-scroll-here [scrollableParent]="scrollableParent" offset="-50">SCROLL HERE</ar-scroll-here>
+</div>
+</div>
+</div>
+
+<style>
+  .container {
+    height: 500px;
+    overflow: auto;
+  }
+</style>
+
+<p>Scroll the first found scrollable parent</p>
+<div class="container">
+<div class="container">
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <ar-scroll-here>SCROLL HERE</ar-scroll-here>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+  <div>blah blah blah</div>
+</div>
+</div>
+
+<p>Scroll window if no scrollable parent is found</p>
+<div *ngFor="let n of counter; let i = index">
+  #{{i}}<ar-scroll-here *ngIf="i==250">SCROLL HERE</ar-scroll-here>
+</div>
