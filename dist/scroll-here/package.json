@@ -1,0 +1,21 @@
+{
+  "name": "scroll-here",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/scroll-here.umd.js",
+  "module": "fesm5/scroll-here.js",
+  "es2015": "fesm2015/scroll-here.js",
+  "esm5": "esm5/scroll-here.js",
+  "esm2015": "esm2015/scroll-here.js",
+  "fesm5": "fesm5/scroll-here.js",
+  "fesm2015": "fesm2015/scroll-here.js",
+  "typings": "scroll-here.d.ts",
+  "metadata": "scroll-here.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
